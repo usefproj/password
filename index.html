@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pick me pass!</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/d5073c3c7d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate a<br /><span>Random Password</span></h1>
+      <div id="password-container">
+        <span id="password">Password</span>
+        <span id="ps"></span>
+        <div class="tooltip">
+          <span id="copy">
+            <span class="tooltiptext" id="myTooltip">nothing to copy</span>
+            <i
+              class="fa-regular fa-clipboard"
+              onclick="copyToDevice();  tooltipAppear()"
+              onmouseout="outFunc()"
+            ></i>
+          </span>
+        </div>
+      </div>
+      <button onclick="setPassword()">
+        <i class="fa-solid fa-bolt"></i>Generate Password
+      </button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
